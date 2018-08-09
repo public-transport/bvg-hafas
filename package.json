@@ -1,0 +1,30 @@
+{
+	"name": "bvg-hafas",
+	"description": "JavaScript client for the NASA/INSA HAFAS API.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"throttle.js"
+	],
+	"keywords": [
+		"bvg",
+		"berliner verkehrsbetriebe",
+		"berlin",
+		"germany",
+		"public transport",
+		"transit",
+		"api",
+		"hafas"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/bvg-hafas",
+	"repository": "derhuerst/bvg-hafas",
+	"bugs": "https://github.com/derhuerst/bvg-hafas/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	}
+}
