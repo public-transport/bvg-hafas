@@ -44,9 +44,61 @@ client.journeys('900000020201', '900000068201', {results: 1})
 The output will be an array of [`journey` objects in the *Friendly Public Transport Format* `1.1.1` format](https://github.com/public-transport/friendly-public-transport-format/tree/1.1.1/spec#journey):
 
 ```javascript
-[ {
-	// todo
-} ]
+{
+	type: 'journey',
+	legs: [ {
+		id: '1|62072|0|86|14082018',
+		origin: {
+			type: 'stop',
+			id: '900000020201',
+			name: 'S+U Jungfernheide',
+			location: {
+				type: 'location',
+				latitude: 52.530273,
+				longitude: 13.299064
+			},
+			products: {
+				suburban: true,
+				subway: true,
+				tram: false,
+				bus: true,
+				ferry: false,
+				express: false,
+				regional: true
+			}
+		},
+		departure: '2018-08-14T15:05:00.000+02:00',
+		departurePlatform: '6',
+		departureDelay: 0,
+		destination: {
+			type: 'stop',
+			id: '900000068201',
+			name: 'S+U Tempelhof',
+			location: {
+				type: 'location',
+				latitude: 52.470692,
+				longitude: 13.385756
+			},
+			products: { /* … */ }
+		},
+		arrival: '2018-08-14T15:27:00.000+02:00',
+		arrivalPlatform: '2',
+		arrivalDelay: 0,
+		direction: 'Ringbahn S 42',
+		line: {
+			type: 'line',
+			id: 's42',
+			name: 'S42',
+			public: true,
+			mode: 'train',
+			product: 'suburban',
+			operator: { /* … */ },
+			// …
+		},
+		cycle: { min: 300, max: 300 }
+	} ],
+	refreshToken: '…'
+}
 ```
 
 
