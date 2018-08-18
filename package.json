@@ -1,7 +1,7 @@
 {
 	"name": "bvg-hafas",
 	"description": "JavaScript client for the NASA/INSA HAFAS API.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -26,6 +26,6 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"hafas-client": "^3.0.0-alpha.21"
+		"hafas-client": "^3.0.0"
 	}
 }
