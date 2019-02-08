@@ -25,7 +25,7 @@ npm install bvg-hafas
 Check [the docs for `hafas-client`](https://github.com/public-transport/hafas-client/tree/next/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/next/p/bvg).
 
 
-## Getting Started
+## Usage
 
 ```javascript
 const createClient = require('bvg-hafas')
@@ -102,16 +102,9 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 ```
 
 
-## Similar Projects
+## Related
 
-- [*Friendly Public Transport Format*](https://github.com/public-transport/friendly-public-transport-format#friendly-public-transport-format-fptf) – A format for APIs, libraries and datasets containing and working with public transport data.
-- [`vbb-hafas`](https://github.com/derhuerst/vbb-hafas) – JavaScript client for the VBB HAFAS API.
-- [`db-hafas`](https://github.com/derhuerst/db-hafas) – JavaScript client for the DB HAFAS API.
-- [`hafas-client`](https://github.com/public-transport/hafas-client) – JavaScript client for HAFAS mobile APIs.
-- [`hafas-collect-departures-at`](https://github.com/derhuerst/hafas-collect-departures-at#hafas-collect-departures-at) – Utility to collect departures, using any HAFAS client.
-- [`hafas-discover-stations`](https://github.com/derhuerst/hafas-discover-stations#hafas-discover-stations) – Pass in a HAFAS client, discover stations by querying departures.
-- [`hafas-rest-api`](https://github.com/derhuerst/hafas-rest-api#hafas-rest-api) – Expose a HAFAS client via an HTTP REST API.
-- [`public-transport-enabler`](https://github.com/schildbach/public-transport-enabler) – Unleash public transport data in your Java project.
+Check [`hafas-client`'s related libs](https://github.com/public-transport/hafas-client/blob/master/readme.md#related).
 
 
 ## Contributing
