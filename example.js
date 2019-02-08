@@ -1,11 +1,15 @@
 'use strict'
 
 const createHafas = require('.')
+// const createThrottledHafas = require('./throttle')
+// const createHafasWithRetry = require('./retry')
+
+const hafas = createHafas('bvg-hafas example')
+// const hafas = createThrottledHafas('bvg-hafas-example', 5, 100)
+// const hafas = createHafasWithRetry('bvg-hafas-example', {retries: 2})
 
 const jungfernheide = '900000020201'
 const tempelhof = '900000068201'
-
-const hafas = createHafas('bvg-hafas example')
 
 hafas.journeys(jungfernheide, tempelhof, {results: 1})
 // .then(([journey]) => {
