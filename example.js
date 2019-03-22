@@ -4,28 +4,31 @@ const createHafas = require('.')
 // const createThrottledHafas = require('./throttle')
 // const createHafasWithRetry = require('./retry')
 
-const hafas = createHafas('bvg-hafas example')
+const hafas = createHafas('bvg-hafas-example')
 // const hafas = createThrottledHafas('bvg-hafas-example', 5, 100)
 // const hafas = createHafasWithRetry('bvg-hafas-example', {retries: 2})
 
-const jungfernheide = '900000020201'
-const tempelhof = '900000068201'
+const spichernstr = '900000042101'
+const bismarckstr = '900000024201'
 
-hafas.journeys(jungfernheide, tempelhof, {results: 1})
-// .then(([journey]) => {
-// 	const leg = journey.legs[0]
-// 	return hafas.journeyLeg(leg.id, leg.line.name)
-// })
+hafas.journeys(spichernstr, bismarckstr, {
+	results: 1,
+	tickets: true,
+	stopovers: true,
+	transferInfo: true
+})
 
-// hafas.departures(jungfernheide, { duration: 5 })
-// hafas.locations('friedrichstr', {results: 2})
-// hafas.locations('mauerpark', {results: 2})
-// hafas.location(jungfernheide)
-// hafas.nearby({
+// hafas.journeys({
 // 	type: 'location',
-// 	latitude: 52.5137344,
-// 	longitude: 13.4744798
-// }, {distance: 200})
+// 	id: '900981377',
+// 	name: 'Berlin, HTW-Berlin Campus Wilhelminenhof',
+// 	latitude: 52.458359,
+// 	longitude: 13.526635
+// }, '900000192001', {results: 1})
+// hafas.departures('900000013102', {duration: 1})
+// hafas.locations('Alexanderplatz', {results: 2})
+// hafas.stop('900000017104')
+// hafas.nearby(52.5137344, 13.4744798, {distance: 60})
 // hafas.radar({
 // 	north: 52.52411,
 // 	west: 13.41002,
@@ -33,5 +36,10 @@ hafas.journeys(jungfernheide, tempelhof, {results: 1})
 // 	east: 13.41709
 // }, {results: 10})
 
-.then(console.log)
-.catch(console.error)
+.then((data) => {
+	console.log(require('util').inspect(data, {depth: null, colors: true}))
+})
+.catch((err) => {
+	console.error(err)
+	process.exitCode = 1
+})

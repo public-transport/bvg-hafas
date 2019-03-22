@@ -1,10 +1,11 @@
 'use strict'
 
-const createThrottledClient = require('hafas-client/throttle')
-const bvgProfile = require('hafas-client/p/bvg')
+const createClient = require('hafas-client')
+const withThrottling = require('hafas-client/throttle')
+const vbbProfile = require('hafas-client/p/vbb')
 
-const throttle = (limit = 5, interval = 1000) => {
-	return createThrottledClient(bvgProfile, limit, interval)
+const createThrottledClient = (userAgent, limit = 5, interval = 1000) => {
+	return withThrottling(createClient, limit, interval)(vbbProfile, userAgent)
 }
 
-module.exports = throttle
+module.exports = createThrottledClient
