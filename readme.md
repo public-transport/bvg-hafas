@@ -1,8 +1,12 @@
 # bvg-hafas
 
+**Deprecated. Use [`bvg-hafas@latest`](https://github.com/derhuerst/bvg-hafas).**
+
+---
+
 **A client for [HAFAS](https://de.wikipedia.org/wiki/HAFAS) endpoint of [*Berliner Verkehrsbetriebe* (BVG)](https://en.wikipedia.org/wiki/Berliner_Verkehrsbetriebe), the largest public transport provider in Berlin.** It acts as a consistent and straightforward interface on top of their verbose API.
 
-This project is actually a thin wrapper around [`hafas-client`](https://github.com/public-transport/hafas-client#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/next/docs) document the API in general.
+This project is actually a thin wrapper around [`hafas-client@3`](https://github.com/public-transport/hafas-client/tree/3). [Its docs](https://github.com/public-transport/hafas-client/tree/3/docs) document the API in general.
 
 *Note*: The BVG HAFAS endpoint covers Brandenburg as well.
 
@@ -22,7 +26,7 @@ npm install bvg-hafas
 
 ## API
 
-Check [the docs for `hafas-client`](https://github.com/public-transport/hafas-client/tree/next/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/next/p/bvg).
+Check [the docs for `hafas-client@3`](https://github.com/public-transport/hafas-client/tree/3/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/3/p/bvg).
 
 
 ## Usage
@@ -33,7 +37,7 @@ const createClient = require('bvg-hafas')
 const client = createClient('my-awesome-program')
 ```
 
-As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/next/docs/locations.md).
+As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/3/docs/locations.md).
 
 ```javascript
 client.journeys('900000020201', '900000068201', {results: 1})
