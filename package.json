@@ -1,7 +1,7 @@
 {
 	"name": "bvg-hafas",
-	"description": "JavaScript client for the NASA/INSA HAFAS API.",
-	"version": "2.0.0",
+	"description": "JavaScript client for the BVG HAFAS API.",
+	"version": "2.0.1",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -19,7 +19,7 @@
 		"hafas"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
-	"homepage": "https://github.com/derhuerst/bvg-hafas",
+	"homepage": "https://github.com/derhuerst/bvg-hafas/tree/2",
 	"repository": "derhuerst/bvg-hafas",
 	"bugs": "https://github.com/derhuerst/bvg-hafas/issues",
 	"license": "ISC",
