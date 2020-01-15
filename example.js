@@ -5,8 +5,13 @@ const createHafas = require('.')
 // const createHafasWithRetry = require('./retry')
 
 const hafas = createHafas('bvg-hafas-example')
-// const hafas = createThrottledHafas('bvg-hafas-example', 5, 100)
-// const hafas = createHafasWithRetry('bvg-hafas-example', {retries: 2})
+// const hafas = createThrottledHafas('bvg-hafas-example', {
+// 	throttlingLimit: 5,
+// 	throttlingInterval: 10000 // 10s
+// })
+// const hafas = createHafasWithRetry('bvg-hafas-example', {
+// 	retryOpts: {retries: 2}
+// })
 
 const spichernstr = '900000042101'
 const bismarckstr = '900000024201'

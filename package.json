@@ -24,9 +24,9 @@
 	"bugs": "https://github.com/derhuerst/bvg-hafas/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"dependencies": {
-		"hafas-client": "^4.0.1"
+		"hafas-client": "^5.0.1"
 	}
 }

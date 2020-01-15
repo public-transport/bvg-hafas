@@ -2,7 +2,7 @@
 
 **A client for [HAFAS](https://de.wikipedia.org/wiki/HAFAS) endpoint of [*Berliner Verkehrsbetriebe* (BVG)](https://en.wikipedia.org/wiki/Berliner_Verkehrsbetriebe), the largest public transport provider in Berlin.** It acts as a consistent and straightforward interface on top of their verbose API.
 
-This project is actually a thin wrapper around [`hafas-client@4`](https://github.com/public-transport/hafas-client/tree/4#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/4/docs) document the API in general.
+This project is actually a thin wrapper around [`hafas-client@5`](https://github.com/public-transport/hafas-client/tree/5#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/5/docs) document the API in general.
 
 *Note*: The BVG HAFAS endpoint covers Brandenburg as well.
 
@@ -22,7 +22,7 @@ npm install bvg-hafas
 
 ## API
 
-Check [the docs for `hafas-client@4`](https://github.com/public-transport/hafas-client/tree/4/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/4/p/bvg).
+Check [the docs for `hafas-client@5`](https://github.com/public-transport/hafas-client/tree/5/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/5/p/bvg).
 
 
 ## Usage
@@ -33,7 +33,7 @@ const createClient = require('bvg-hafas')
 const client = createClient('my-awesome-program')
 ```
 
-As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/4/docs/locations.md).
+As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/5/docs/locations.md).
 
 ```javascript
 client.journeys('900000020201', '900000068201', {results: 1})
@@ -104,7 +104,7 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 
 ## Related
 
-Check [`hafas-client`'s related libs](https://github.com/public-transport/hafas-client/blob/4/readme.md#related).
+Check [`hafas-client`'s related libs](https://github.com/public-transport/hafas-client/blob/5/readme.md#related).
 
 
 ## Contributing
