@@ -1,16 +1,15 @@
 # bvg-hafas
 
-**A client for [HAFAS](https://de.wikipedia.org/wiki/HAFAS) endpoint of [*Berliner Verkehrsbetriebe* (BVG)](https://en.wikipedia.org/wiki/Berliner_Verkehrsbetriebe), the largest public transport provider in Berlin.** It acts as a consistent and straightforward interface on top of their verbose API.
+**A client for the [HAFAS](https://de.wikipedia.org/wiki/HAFAS) endpoint of [*Berliner Verkehrsbetriebe* (BVG)](https://en.wikipedia.org/wiki/Berliner_Verkehrsbetriebe), the largest public transport provider in Berlin.** It acts as a consistent and straightforward interface on top of their verbose API.
 
 This project is actually a thin wrapper around [`hafas-client@5`](https://github.com/public-transport/hafas-client/tree/5#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/5/docs) document the API in general.
 
 *Note*: The BVG HAFAS endpoint covers Brandenburg as well.
 
 [![npm version](https://img.shields.io/npm/v/bvg-hafas.svg)](https://www.npmjs.com/package/bvg-hafas)
-[![dependency status](https://img.shields.io/david/derhuerst/bvg-hafas.svg)](https://david-dm.org/derhuerst/bvg-hafas)
-![ISC-licensed](https://img.shields.io/github/license/derhuerst/bvg-hafas.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+![ISC-licensed](https://img.shields.io/github/license/public-transport/bvg-hafas.svg)
+[![chat on gitter](https://badges.gitter.im/public-transport/Lobby.svg)](https://gitter.im/public-transport/Lobby)
+[![support Jannis via GitHub Sponsors](https://img.shields.io/badge/support%20Jannis-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
 
 
 ## Installing
@@ -109,4 +108,4 @@ Check [`hafas-client`'s related libs](https://github.com/public-transport/hafas-
 
 ## Contributing
 
-If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/bvg-hafas/issues).
+If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/public-transport/bvg-hafas/issues).

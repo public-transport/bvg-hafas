@@ -1,7 +1,7 @@
 {
 	"name": "bvg-hafas",
 	"description": "JavaScript client for the BVG HAFAS API.",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -10,18 +10,19 @@
 	],
 	"keywords": [
 		"bvg",
+		"vbb",
 		"berliner verkehrsbetriebe",
 		"berlin",
 		"germany",
 		"public transport",
 		"transit",
-		"api",
-		"hafas"
+		"hafas",
+		"hafas-client"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
-	"homepage": "https://github.com/derhuerst/bvg-hafas/tree/3",
-	"repository": "derhuerst/bvg-hafas",
-	"bugs": "https://github.com/derhuerst/bvg-hafas/issues",
+	"homepage": "https://github.com/public-transport/bvg-hafas/tree/3",
+	"repository": "public-transport/bvg-hafas",
+	"bugs": "https://github.com/public-transport/bvg-hafas/issues",
 	"license": "ISC",
 	"engines": {
 		"node": ">=10"
