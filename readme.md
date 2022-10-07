@@ -8,8 +8,8 @@ This project is actually a thin wrapper around [`hafas-client@5`](https://github
 
 [![npm version](https://img.shields.io/npm/v/bvg-hafas.svg)](https://www.npmjs.com/package/bvg-hafas)
 ![ISC-licensed](https://img.shields.io/github/license/public-transport/bvg-hafas.svg)
-[![chat on gitter](https://badges.gitter.im/public-transport/Lobby.svg)](https://gitter.im/public-transport/Lobby)
 [![support Jannis via GitHub Sponsors](https://img.shields.io/badge/support%20Jannis-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with Jannis on Twitter](https://img.shields.io/badge/chat%20with%20Jannis-on%20Twitter-1da1f2.svg)](https://twitter.com/derhuerst)
 
 
 ## Installing
@@ -35,9 +35,10 @@ const client = createClient('my-awesome-program')
 As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/5/docs/locations.md).
 
 ```javascript
-client.journeys('900000020201', '900000068201', {results: 1})
-.then((journeys) => console.log(journeys[0]))
-.catch(console.error)
+const journeys = await client.journeys('900000020201', '900000068201', {
+	results: 1,
+})
+console.log(journeys[0])
 ```
 
 The output will be an array of [`journey` objects in the *Friendly Public Transport Format* `1.2.1` format](https://github.com/public-transport/friendly-public-transport-format/tree/1.2.1/spec#journey):
@@ -103,7 +104,7 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 
 ## Related
 
-Check [`hafas-client`'s related libs](https://github.com/public-transport/hafas-client/blob/5/readme.md#related).
+Check [`hafas-client`'s related projects](https://github.com/public-transport/hafas-client/blob/5/readme.md#related-projects).
 
 
 ## Contributing
