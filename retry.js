@@ -1,6 +1,6 @@
-import createClient from 'hafas-client'
-import withRetrying from 'hafas-client/retry.js'
-import bvgProfile from 'hafas-client/p/bvg/index.js'
+import {createClient} from 'hafas-client'
+import {withRetrying} from 'hafas-client/retry.js'
+import {profile as bvgProfile} from 'hafas-client/p/bvg/index.js'
 
 const createRetryingClient = (userAgent, opt = {}) => {
 	const {retryOpts} = {retryOpts: {}, ...opt}

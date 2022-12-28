@@ -12,8 +12,8 @@ const hafas = createHafas('bvg-hafas-example')
 // 	retryOpts: {retries: 2}
 // })
 
-const spichernstr = '900000042101'
-const bismarckstr = '900000024201'
+const spichernstr = '900042101'
+const bismarckstr = '900024201'
 
 // let data = await hafas.locations('Alexanderplatz', {results: 2})
 // let data = await hafas.nearby(52.5137344, 13.4744798, {distance: 60})

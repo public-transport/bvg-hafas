@@ -2,7 +2,7 @@
 
 **A client for the [HAFAS](https://de.wikipedia.org/wiki/HAFAS) endpoint of [*Berliner Verkehrsbetriebe* (BVG)](https://en.wikipedia.org/wiki/Berliner_Verkehrsbetriebe), the largest public transport provider in Berlin.** It acts as a consistent and straightforward interface on top of their verbose API.
 
-This project is actually a thin wrapper around [`hafas-client@5`](https://github.com/public-transport/hafas-client/tree/5#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/5/docs) document the API in general.
+This project is actually a thin wrapper around [`hafas-client@6`](https://github.com/public-transport/hafas-client/tree/6#hafas-client). [Its docs](https://github.com/public-transport/hafas-client/tree/6/docs) document the API in general.
 
 *Note*: The BVG HAFAS endpoint covers Brandenburg as well.
 
@@ -21,7 +21,7 @@ npm install bvg-hafas
 
 ## API
 
-Check [the docs for `hafas-client@5`](https://github.com/public-transport/hafas-client/tree/5/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/5/p/bvg).
+Check [the docs for `hafas-client@6`](https://github.com/public-transport/hafas-client/tree/6/docs) as well as [its BVG-specific customisations](https://github.com/public-transport/hafas-client/tree/6/p/bvg).
 
 
 ## Usage
@@ -32,10 +32,10 @@ import {createBvgHafas} from 'bvg-hafas'
 const client = createBvgHafas('my-awesome-program')
 ```
 
-As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/5/docs/locations.md).
+As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/6/docs/locations.md).
 
 ```javascript
-const journeys = await client.journeys('900000020201', '900000068201', {
+const journeys = await client.journeys('900020201', '900068201', {
 	results: 1,
 })
 console.log(journeys[0])
@@ -50,7 +50,7 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 		id: '1|62072|0|86|14082018',
 		origin: {
 			type: 'stop',
-			id: '900000020201',
+			id: '900020201',
 			name: 'S+U Jungfernheide',
 			location: {
 				type: 'location',
@@ -72,7 +72,7 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 		departureDelay: 0,
 		destination: {
 			type: 'stop',
-			id: '900000068201',
+			id: '900068201',
 			name: 'S+U Tempelhof',
 			location: {
 				type: 'location',
@@ -104,7 +104,7 @@ The output will be an array of [`journey` objects in the *Friendly Public Transp
 
 ## Related
 
-Check [`hafas-client`'s related projects](https://github.com/public-transport/hafas-client/blob/5/readme.md#related-projects).
+Check [`hafas-client`'s related projects](https://github.com/public-transport/hafas-client/blob/6/readme.md#related-projects).
 
 
 ## Contributing
