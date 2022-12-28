@@ -1,13 +1,11 @@
-'use strict'
-
-const createHafasClient = require('hafas-client')
-const bvgProfile = require('hafas-client/p/bvg')
+import createHafasClient from 'hafas-client'
+import bvgProfile from 'hafas-client/p/bvg/index.js'
 
 const defaults = {
 	profile: bvgProfile
 }
 
-const createClient = (userAgent, opt = {}) => {
+const createBvgHafas = (userAgent, opt = {}) => {
 	const {
 		profile,
 	} = {...defaults, ...opt}
@@ -15,5 +13,7 @@ const createClient = (userAgent, opt = {}) => {
 	return createHafasClient(profile, userAgent)
 }
 
-createClient.defaults = defaults
-module.exports = createClient
+export {
+	defaults,
+	createBvgHafas,
+}

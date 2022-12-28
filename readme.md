@@ -27,9 +27,9 @@ Check [the docs for `hafas-client@5`](https://github.com/public-transport/hafas-
 ## Usage
 
 ```javascript
-const createClient = require('bvg-hafas')
+import {createBvgHafas} from 'bvg-hafas'
 
-const client = createClient('my-awesome-program')
+const client = createBvgHafas('my-awesome-program')
 ```
 
 As an example, we will search for a route from *Berlin Jungfernheide* to *Tempelhof*. To get the station IDs, use [`locations(query, [opt])`](https://github.com/public-transport/hafas-client/blob/5/docs/locations.md).

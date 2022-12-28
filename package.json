@@ -2,6 +2,7 @@
 	"name": "bvg-hafas",
 	"description": "JavaScript client for the BVG HAFAS API.",
 	"version": "3.1.0",
+	"type": "module",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -25,7 +26,7 @@
 	"bugs": "https://github.com/public-transport/bvg-hafas/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=10"
+		"node": ">=18"
 	},
 	"dependencies": {
 		"hafas-client": "^5.0.1"

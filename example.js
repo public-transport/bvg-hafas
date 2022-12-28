@@ -1,15 +1,14 @@
-'use strict'
-
-const createHafas = require('.')
-// const createThrottledHafas = require('./throttle')
-// const createHafasWithRetry = require('./retry')
+import {inspect} from 'node:util'
+import {createBvgHafas as createHafas} from './index.js'
+// import {createThrottledHafas} from './throttle.js'
+// import {createRetryingClient} from './retry.js'
 
 const hafas = createHafas('bvg-hafas-example')
 // const hafas = createThrottledHafas('bvg-hafas-example', {
 // 	throttlingLimit: 5,
 // 	throttlingInterval: 10000 // 10s
 // })
-// const hafas = createHafasWithRetry('bvg-hafas-example', {
+// const hafas = createRetryingClient('bvg-hafas-example', {
 // 	retryOpts: {retries: 2}
 // })
 
@@ -42,7 +41,7 @@ hafas.journeys(spichernstr, bismarckstr, {
 // }, {results: 10})
 
 .then((data) => {
-	console.log(require('util').inspect(data, {depth: null, colors: true}))
+	console.log(inspect(data, {depth: null, colors: true}))
 })
 .catch((err) => {
 	console.error(err)
